@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Gmail Organizer Chrome Extension
 
 Gmail Organizer is a Chrome extension that helps you manage your Gmail folders and create auto-sorting rules for your emails.
@@ -71,4 +70,3 @@ For any questions or support, please contact [yipibell@gmail.com](mailto:yipibel
 =======
 # GMailOrrganizer
 This Chrome extension empowers users to effortlessly manage their Gmail inbox by allowing them to set and apply customizable sorting rules through an intuitive user interface. Say goodbye to cluttered inboxes and hello to organized emails!
->>>>>>> 34097e9f76771f68713e93dd605c1ca04b1e8efa
