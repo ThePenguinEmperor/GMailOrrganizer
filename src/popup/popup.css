@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+#popup-container {
+    width: 400px; /* Set a fixed width for the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0078d4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #005a9e;
+}
+
+.hidden {
+    display: none;
+}
+
+#rules-view, #create-rule-view {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+select, input {
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#key-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#key-options select {
+    flex: 1;
+}
+
+#key-options button {
+    margin-left: 10px;
+}
+
+#selected-keys {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.key-bubble {
+    background-color: #0078d4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.key-bubble span {
+    margin-right: 10px;
+}
+
+.key-bubble button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#action-options {
+    margin-top: 20px;
+}
+
+#move-options {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#move-options select {
+    flex: 1;
+}
+
+#move-options input {
+    margin-top: 10px;
+    flex: 1;
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}

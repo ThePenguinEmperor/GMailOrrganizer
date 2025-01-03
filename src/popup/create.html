@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Organizer - Create Rule</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="popup-container">
+        <h2>Create Sorting Rule</h2>
+        <form id="rule-form">
+            <label for="rule-key">Select Key:</label>
+            <select id="rule-key">
+                <option value="" disabled selected>Select Key</option>
+                <option value="author">Author</option>
+                <option value="subject">Subject</option>
+                <option value="content">Content</option>
+            </select>
+            
+            <div id="key-options" class="hidden">
+                <label for="key-list">Select Key Value:</label>
+                <select id="key-list">
+                    <option value="" disabled selected>Select Key Value</option>
+                </select>
+                <button type="button" id="add-key">Add</button>
+            </div>
+            
+            <div id="selected-keys"></div>
+            
+            <div id="action-options" class="hidden">
+                <label for="rule-action">Action:</label>
+                <select id="rule-action">
+                    <option value="" disabled selected>Select Action</option>
+                    <option value="move">Move to</option>
+                    <option value="delete">Delete</option>
+                </select>
+            </div>
+            
+            <div id="move-options" class="hidden">
+                <label for="target-folder">Target Folder:</label>
+                <select id="target-folder">
+                    <!-- Folders will be dynamically populated here -->
+                </select>
+                <input type="text" id="new-folder-name" placeholder="New folder name" class="hidden">
+            </div>
+            
+            <div id="form-buttons">
+                <button type="button" id="back-to-main-from-create">Back</button>
+                <button type="submit">Save Rule</button>
+            </div>
+        </form>
+    </div>
+    <script src="create.js"></script>
+</body>
+</html>
